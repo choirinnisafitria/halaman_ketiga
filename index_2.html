@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="quiz-home-box custom-box show">
+        <h4>Welcome to The
+            <br>
+            "MATH QUIZ" </h4>
+        <h4>Anda akan memiliki 15 detik untuk menjawab setiap pertanyaan.</h4>
+        <button type="button" class="start-quiz-btn btn">Start The Quiz</button>
+    </div>
+
+    <div class="quiz-box custom-box">
+        <div class="stats">
+            <div class="quiz-time">
+                <div class="remaining-time"></div>
+                <span class="time-up-text">Time's Up</span>
+            </div>
+            <div class="score-board">
+                <span class="score-text">Score:</span>
+                <span class="correct-answers"></span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="current-question-num" id="current-question-num">
+
+            </div>
+            <div class="question-text" id="question-text"></div>
+        </div>
+
+        <div class="option-box" id="option-box">
+
+        </div>
+        <div class="answer-description">
+
+        </div>
+        <div class="next-question">
+            <button type="button" class="next-question-btn btn">Next</button>
+            <button type="button" class="see-result-btn btn">See Result</button>
+        </div>
+    </div>
+
+    <div class="quiz-over-box custom-box">
+        <h1>Hasil Quiz</h1>
+        <h4>Total Quiz: <span class="total-questions">3</span></h4>
+        <h4>Test: <span class="total-attempt"></span></h4>
+        <h4>Benar: <span class="total-correct"></span></h4>
+        <h4>Salah: <span class="total-wrong"></span></h4>
+        <h4>Persentase: <span class="percentage"></span></h4>
+
+        <h4>masukkan nama anda!!!</h4>
+        <form class="myForm" id="myForm">
+            <label>Name:<input id="myFormName" type="text" name="name"></label>
+            <button type="submit" class="submit-name-btn btn">Submit</button>
+        </form>
+
+        <button type="button" class="start-again-quiz-btn btn">Try Again</button>
+        <button type="button" class="go-home-btn btn">Home</button>
+       
+
+        <div class="records">
+            <h4>Record:
+                <ol id="record">
+                </ol>
+            </h4>
+        </div>
+    </div>
+
+    <script src="./js/script_2.js"></script>
+</body>
+
+</html>
